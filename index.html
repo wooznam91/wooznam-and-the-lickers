@@ -40,6 +40,14 @@
   </head>
   <body>
     <a class="skip-link" href="#films">Skip to the films</a>
+    <svg class="icon-sprite" aria-hidden="true">
+      <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1.15" fill="currentColor"/></symbol>
+      <symbol id="icon-tiktok" viewBox="0 0 24 24"><path d="M14.2 3v11.2a4.9 4.9 0 1 1-4.1-4.84v3.08a1.92 1.92 0 1 0 1.12 1.76V3h2.98Zm0 0c.42 2.42 1.86 3.83 4.8 4.05v3.02c-1.94-.06-3.48-.65-4.8-1.76V3Z" fill="currentColor"/></symbol>
+      <symbol id="icon-youtube" viewBox="0 0 24 24"><path d="M21.2 7.1a2.7 2.7 0 0 0-1.9-1.9C17.6 4.75 12 4.75 12 4.75s-5.6 0-7.3.45a2.7 2.7 0 0 0-1.9 1.9A28 28 0 0 0 2.35 12a28 28 0 0 0 .45 4.9 2.7 2.7 0 0 0 1.9 1.9c1.7.45 7.3.45 7.3.45s5.6 0 7.3-.45a2.7 2.7 0 0 0 1.9-1.9 28 28 0 0 0 .45-4.9 28 28 0 0 0-.45-4.9Z" fill="currentColor"/><path d="m10 15.35 5.2-3.35L10 8.65v6.7Z" fill="var(--icon-cut,#170207)"/></symbol>
+      <symbol id="icon-soundcloud" viewBox="0 0 24 24"><path d="M1.6 13.1h1.1l.45 3.2-.45 2.4H1.6l-.5-2.4.5-3.2Zm2.2-1.8h1.15l.6 5-.6 3.4H3.8l-.58-3.4.58-5Zm2.3-1.3h1.2l.7 6.3-.7 4.2H6.1l-.7-4.2.7-6.3Zm2.35-3.1a6.7 6.7 0 0 1 3.1-.78 6.55 6.55 0 0 1 6.3 4.8 4.65 4.65 0 1 1 1.5 9.05H8.45V6.9Z" fill="currentColor"/></symbol>
+      <symbol id="icon-spotify" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10" fill="currentColor"/><path d="M6.9 9.15c3.55-1.05 7.65-.8 10.85.65M7.65 12.25c3.12-.82 6.52-.57 9.25.62M8.35 15.15c2.45-.6 5.12-.4 7.35.55" fill="none" stroke="var(--icon-cut,#170207)" stroke-width="1.65" stroke-linecap="round"/></symbol>
+      <symbol id="icon-apple-music" viewBox="0 0 24 24"><rect x="2.5" y="2.5" width="19" height="19" rx="5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M15.9 6.3v9.1a2.75 2.75 0 1 1-1.35-2.37V8.25l-5.1 1.05v7.08a2.75 2.75 0 1 1-1.35-2.37V8.2l7.8-1.9Z" fill="currentColor"/></symbol>
+    </svg>
     <div class="velvet velvet--left" aria-hidden="true"></div>
     <div class="velvet velvet--right" aria-hidden="true"></div>
 
@@ -67,11 +75,11 @@
           <div class="curtain curtain--right" aria-hidden="true"><img src="assets/velvet-side-left.webp" alt="" /></div>
           <div class="hero__memories" aria-hidden="true">
             <img class="hero__memory hero__memory--pub" src="assets/wooznam-pub.webp" alt="" fetchpriority="high" decoding="async" />
-            <img class="hero__memory" data-src="https://i.ytimg.com/vi/X5DVTUBXt2I/hqdefault.jpg" alt="" decoding="async" />
-            <img class="hero__memory" data-src="https://i.ytimg.com/vi/2JQiGG_NJyc/hqdefault.jpg" alt="" decoding="async" />
-            <img class="hero__memory" data-src="https://i.ytimg.com/vi/85EDuy6W2jY/hqdefault.jpg" alt="" decoding="async" />
-            <img class="hero__memory" data-src="https://i.ytimg.com/vi/OZewMqXHbDo/hqdefault.jpg" alt="" decoding="async" />
-            <img class="hero__memory" data-src="https://i.ytimg.com/vi/ziDh0Kju3Jw/hqdefault.jpg" alt="" decoding="async" />
+            <img class="hero__memory" data-src="https://i.ytimg.com/vi/X5DVTUBXt2I/maxresdefault.jpg" data-fallback="https://i.ytimg.com/vi/X5DVTUBXt2I/sddefault.jpg" alt="" decoding="async" />
+            <img class="hero__memory" data-src="https://i.ytimg.com/vi/2JQiGG_NJyc/maxresdefault.jpg" data-fallback="https://i.ytimg.com/vi/2JQiGG_NJyc/sddefault.jpg" alt="" decoding="async" />
+            <img class="hero__memory" data-src="https://i.ytimg.com/vi/85EDuy6W2jY/maxresdefault.jpg" data-fallback="https://i.ytimg.com/vi/85EDuy6W2jY/sddefault.jpg" alt="" decoding="async" />
+            <img class="hero__memory" data-src="https://i.ytimg.com/vi/OZewMqXHbDo/maxresdefault.jpg" data-fallback="https://i.ytimg.com/vi/OZewMqXHbDo/sddefault.jpg" alt="" decoding="async" />
+            <img class="hero__memory" data-src="https://i.ytimg.com/vi/ziDh0Kju3Jw/maxresdefault.jpg" data-fallback="https://i.ytimg.com/vi/ziDh0Kju3Jw/sddefault.jpg" alt="" decoding="async" />
           </div>
           <div class="hero__wash" aria-hidden="true"></div>
           <div class="hero__arch" aria-hidden="true"></div>
@@ -81,6 +89,14 @@
             <p>Bleak British alternative folk-rock</p>
             <h1><span>Wooznam</span><em>&amp; The Lickers</em></h1>
             <p class="hero__invitation">Enter Clownland</p>
+            <nav class="platforms platforms--hero" aria-label="Follow and listen to Wooznam and The Lickers">
+              <a href="https://www.instagram.com/wooznam/" target="_blank" rel="noreferrer" aria-label="Follow Wooznam on Instagram"><svg aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
+              <a href="https://www.tiktok.com/@wooznam" target="_blank" rel="noreferrer" aria-label="Follow Wooznam on TikTok"><svg aria-hidden="true"><use href="#icon-tiktok"></use></svg></a>
+              <a href="https://www.youtube.com/@wooznamandthelickers?sub_confirmation=1" target="_blank" rel="noreferrer" aria-label="Subscribe to Wooznam and The Lickers on YouTube"><svg aria-hidden="true"><use href="#icon-youtube"></use></svg></a>
+              <a href="https://soundcloud.com/c_l_o_w_n" target="_blank" rel="noreferrer" aria-label="Listen to Wooznam on SoundCloud"><svg aria-hidden="true"><use href="#icon-soundcloud"></use></svg></a>
+              <span class="platforms__soon" aria-label="Spotify, coming soon" title="Spotify · coming soon"><svg aria-hidden="true"><use href="#icon-spotify"></use></svg></span>
+              <span class="platforms__soon" aria-label="Apple Music, coming soon" title="Apple Music · coming soon"><svg aria-hidden="true"><use href="#icon-apple-music"></use></svg></span>
+            </nav>
           </div>
           <a class="descend" href="#overture"><span>The films begin below</span><b aria-hidden="true">↓</b></a>
         </div>
@@ -269,10 +285,13 @@
           <strong>Power through it.</strong>
         </div>
         <a href="https://youtube.com/@wooznamandthelickers?si=b27t7EiVkKVGYnQN" target="_blank" rel="noreferrer">Enter the complete archive <span aria-hidden="true">↗</span></a>
-        <nav class="socials" data-reveal aria-label="Listen to and follow Wooznam and The Lickers">
-          <a href="https://soundcloud.com/c_l_o_w_n" target="_blank" rel="noreferrer">SoundCloud <span aria-hidden="true">↗</span></a>
-          <a href="https://www.tiktok.com/@wooznam" target="_blank" rel="noreferrer">TikTok <span>@wooznam</span> <b aria-hidden="true">↗</b></a>
-          <a href="https://www.instagram.com/wooznam/" target="_blank" rel="noreferrer">Instagram <span>@wooznam</span> <b aria-hidden="true">↗</b></a>
+        <nav class="platforms platforms--finale" data-reveal aria-label="Listen to and follow Wooznam and The Lickers">
+          <a href="https://www.instagram.com/wooznam/" target="_blank" rel="noreferrer" aria-label="Follow Wooznam on Instagram"><svg aria-hidden="true"><use href="#icon-instagram"></use></svg><span>Instagram</span></a>
+          <a href="https://www.tiktok.com/@wooznam" target="_blank" rel="noreferrer" aria-label="Follow Wooznam on TikTok"><svg aria-hidden="true"><use href="#icon-tiktok"></use></svg><span>TikTok</span></a>
+          <a href="https://www.youtube.com/@wooznamandthelickers?sub_confirmation=1" target="_blank" rel="noreferrer" aria-label="Subscribe to Wooznam and The Lickers on YouTube"><svg aria-hidden="true"><use href="#icon-youtube"></use></svg><span>YouTube</span></a>
+          <a href="https://soundcloud.com/c_l_o_w_n" target="_blank" rel="noreferrer" aria-label="Listen to Wooznam on SoundCloud"><svg aria-hidden="true"><use href="#icon-soundcloud"></use></svg><span>SoundCloud</span></a>
+          <span class="platforms__soon" aria-label="Spotify, coming soon" title="Spotify · coming soon"><svg aria-hidden="true"><use href="#icon-spotify"></use></svg><span>Spotify · soon</span></span>
+          <span class="platforms__soon" aria-label="Apple Music, coming soon" title="Apple Music · coming soon"><svg aria-hidden="true"><use href="#icon-apple-music"></use></svg><span>Apple Music · soon</span></span>
         </nav>
         <a class="surface" href="#top">Return to the surface ↑</a>
       </section>

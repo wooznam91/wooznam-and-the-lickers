@@ -40,7 +40,13 @@ const loadHeroMemories = () => {
   const deferred = [...heroMemories.querySelectorAll("img[data-src]")];
   Promise.all(deferred.map((image) => new Promise((resolve) => {
     image.addEventListener("load", resolve, { once:true });
-    image.addEventListener("error", resolve, { once:true });
+    image.addEventListener("error", () => {
+      const fallback = image.dataset.fallback;
+      if (fallback && image.src !== fallback) {
+        image.src = fallback;
+        image.removeAttribute("data-fallback");
+      } else resolve();
+    });
     image.src = image.dataset.src;
     image.removeAttribute("data-src");
   }))).then(() => heroMemories.classList.add("is-ready"));

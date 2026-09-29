@@ -11,11 +11,11 @@ https://wooznam-and-the-lickers-preview.wooznam.chatgpt.site
 - Complete single-page website
 - Responsive mobile, tablet and desktop layouts
 - Interactive spinning coin and band portraits
-- Animated curtains, hero imagery and neon sign
+- High-resolution crossfading hero imagery, animated curtains and neon sign
 - Seven embedded YouTube videos
 - Film and Ashtray Sessions sections
 - About and tour sections
-- SoundCloud, TikTok, Instagram and YouTube links
+- SoundCloud, TikTok, Instagram and YouTube links, plus Spotify and Apple Music placeholders
 - All required local image assets
 
 ## Publish with GitHub Pages
@@ -63,5 +63,4 @@ Then open `http://localhost:8080`.
 
 ## Source snapshot
 
-Packaged from the published site source at commit `8a061422ef5d4e16eede3e15a787a98de90f394d`.
-
+Packaged from the published site source at commit `181aa025911fe58a1dadb9e35210e33411925672`.
