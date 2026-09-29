@@ -1,253 +1,215 @@
 <!doctype html>
-<html lang="en-GB" class="no-js">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Wooznam & The Lickers make original songs and cinematic short films from the stranger, sadder corners of history."
-    />
-    <meta name="theme-color" content="#0b0b09" />
-    <title>Wooznam &amp; The Lickers | History, badly behaved</title>
-    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='32' fill='%230b0b09'/%3E%3Cpath d='M32 9v46c-12 0-20-9-20-22S20 9 32 9Z' fill='%23f2c94c'/%3E%3Cpath d='M32 9c12 0 20 11 20 24s-8 22-20 22V9Z' fill='%23e7dec8'/%3E%3Ccircle cx='24' cy='29' r='4' fill='%230b0b09'/%3E%3Ccircle cx='41' cy='29' r='4' fill='%234a8db7'/%3E%3Cpath d='m32 29-4 9h8Z' fill='%23d72f22'/%3E%3C/svg%3E" />
-    <link rel="stylesheet" href="styles.css" />
-    <link rel="stylesheet" href="georgian.css" />
-    <script>
-      document.documentElement.classList.remove("no-js");
-      document.documentElement.classList.add("js");
-    </script>
-  </head>
-  <body>
-    <a class="skip-link" href="#main">Skip to the stories</a>
-    <aside class="procession" aria-hidden="true">
-      <span class="procession__title">The programme</span>
-      <span class="procession__track"><i></i></span>
-      <strong class="procession__act">Entrance</strong>
-    </aside>
+<html lang="en-GB">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Wooznam & The Lickers. Bleak British alternative folk-rock, original films, dead people, bad decisions and questionable historical judgement." />
+  <meta name="theme-color" content="#080604" />
+  <meta property="og:title" content="Wooznam & The Lickers" />
+  <meta property="og:description" content="Bleak British alternative folk-rock from Clownland." />
+  <title>Wooznam & The Lickers</title>
+  <link rel="icon" href="assets/sad-glyph.webp" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#films">Skip to the films</a>
 
-    <header class="site-header" data-header>
-      <a class="brand" href="#top" aria-label="Wooznam and The Lickers, home">
-        <img src="assets/mark.webp" width="72" height="72" alt="" />
-        <span class="brand__name">Wooznam <i>&amp;</i> The Lickers</span>
-      </a>
+  <div class="theatre-frame" aria-hidden="true">
+    <img class="pelmet" src="assets/pelmet.webp" alt="" />
+    <img class="curtain curtain--left" src="assets/side-curtain.webp" alt="" />
+    <img class="curtain curtain--right" src="assets/side-curtain.webp" alt="" />
+  </div>
 
-      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
-        <span class="menu-toggle__label">Menu</span>
-        <span class="menu-toggle__bars" aria-hidden="true"></span>
+  <header class="site-header" id="top">
+    <a class="brand" href="#top" aria-label="Wooznam and The Lickers, home">
+      <img src="assets/badge-logo.webp" alt="" />
+      <span>WOOZNAM <i>&amp;</i> THE LICKERS</span>
+    </a>
+    <button class="menu-button" aria-expanded="false" aria-controls="nav">MENU</button>
+    <nav id="nav" class="nav" aria-label="Primary navigation">
+      <a href="#films">FILMS</a>
+      <a href="#sessions">SESSIONS</a>
+      <a href="#about">ABOUT</a>
+      <a href="#tour">TOUR DATES</a>
+      <a class="subscribe" href="https://www.youtube.com/@wooznam?sub_confirmation=1" target="_blank" rel="noopener">SUBSCRIBE</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-slides" aria-hidden="true">
+        <div class="hero-slide is-active" style="--bg:url('assets/stage-bg.webp')"></div>
+        <div class="hero-slide" style="--bg:url('assets/letter-bg.webp')"></div>
+        <div class="hero-slide" style="--bg:url('assets/pierrot-bg.webp')"></div>
+        <div class="hero-slide" style="--bg:url('assets/wooznam.webp')"></div>
+      </div>
+      <div class="hero-grain" aria-hidden="true"></div>
+      <div class="hero-inner">
+        <p class="kicker">BLEAK BRITISH ALTERNATIVE FOLK-ROCK</p>
+        <h1 id="hero-title">WOOZNAM <span>&amp; The Lickers</span></h1>
+        <p class="hero-copy">Original songs and short films from the stranger, sadder corners of history.</p>
+        <a class="clownland" href="#films">ENTER CLOWNLAND <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="neon" aria-hidden="true"><span>TONIGHT</span><small>AND EVERY NIGHT</small></div>
+    </section>
+
+    <section class="channel-note" aria-label="From the channel notes">
+      <p>FROM THE CHANNEL NOTES</p>
+      <blockquote>“One would have thought time and fate might bring some improvement. There is no improvement to be found here.”</blockquote>
+    </section>
+
+    <section class="slop-house" id="films" aria-labelledby="films-title">
+      <div class="section-head">
+        <p>ORIGINAL FILMS FROM CLOWNLAND</p>
+        <h2 id="films-title">THE SLOP HOUSE</h2>
+      </div>
+
+      <div class="film-grid">
+        <article class="film-card" data-film="annie">
+          <div class="tattoo tattoo--grave" aria-hidden="true">
+            <svg viewBox="0 0 160 160"><path d="M48 128h66M59 128V76c0-20 13-34 29-34s29 14 29 34v52M75 71h26M88 56v30"/><path d="M28 122c10-2 17 0 22 7-8 7-21 8-32 1 1-4 4-7 10-8Z"/><path d="M28 111h20v18H28z"/></svg>
+          </div>
+          <p class="archive">FROM THE ARCHIVE</p>
+          <h3>The Ghost of Annie King</h3>
+          <p>It is most relieving to discover one descends from the criminally insane and the drunk. It explains a great deal.</p>
+          <p class="excerpt">Annie disappears from Dublin’s records and resurfaces across the Irish Sea: Liverpool, Manchester and eventually Wigan, glimpsed through Catholic registers and census returns, moving through some of the poorest communities in industrial England.</p>
+          <a href="https://www.youtube.com/@wooznam" target="_blank" rel="noopener">WATCH ON YOUTUBE ↗</a>
+        </article>
+
+        <article class="film-card" data-film="sarajevo">
+          <div class="tattoo tattoo--hand" aria-hidden="true">
+            <svg viewBox="0 0 160 160"><path d="M79 137 61 111 49 88 33 62c-6-11 8-18 15-8l18 25-9-36c-3-13 13-16 17-4l10 35-2-42c0-13 17-13 18 0l4 42 8-34c4-12 19-8 16 5l-8 43 13-19c7-10 20 0 13 10l-29 47c-9 15-21 24-38 24Z"/><circle cx="95" cy="97" r="11"/><path d="m89 97 6 6 10-14"/></svg>
+          </div>
+          <p class="archive">FROM THE ARCHIVE</p>
+          <h3>Sarajevo</h3>
+          <p>The motorcade was not meant to be here. Nor was Princip. Then the car began to reverse.</p>
+          <p class="excerpt">Slowly. Awkwardly. Princip walked closer. He had practised this. Mirrors. Targets. The same movements, again and again.</p>
+          <a href="https://www.youtube.com/@wooznam" target="_blank" rel="noopener">WATCH ON YOUTUBE ↗</a>
+        </article>
+
+        <article class="film-card film-card--image" data-film="letter">
+          <div class="film-image" style="background-image:url('assets/letter-bg.webp')"></div>
+          <div class="tattoo tattoo--letter" aria-hidden="true">
+            <svg viewBox="0 0 160 160"><path d="M28 102h104v22H28z"/><path d="M42 101c9-17 27-21 39-16 11 5 25 4 37-7"/><path d="M55 40h55v42H55z"/><path d="m55 40 28 23 27-23M49 119c9 13 56 14 65 0"/></svg>
+          </div>
+          <p class="archive">FROM THE ARCHIVE</p>
+          <h3>Letter In An Ashtray</h3>
+          <p>There exists a peculiar vanity among the creative types: the belief that grief, when poetically arranged, may reverse death, or at the very least render it aesthetically palatable.</p>
+          <a href="https://youtu.be/85EDuy6W2jY" target="_blank" rel="noopener">WATCH ON YOUTUBE ↗</a>
+        </article>
+
+        <article class="film-card" data-film="beauty">
+          <div class="tattoo tattoo--ostrich" aria-hidden="true">
+            <svg viewBox="0 0 160 160"><path d="M86 122c-22 0-38-14-38-32 0-20 19-31 42-28 20 2 33 14 31 30-2 18-16 30-35 30Z"/><path d="M101 63c2-23 4-37 17-42 13-6 24 5 19 15-4 7-12 7-19 5-4 8-5 17-5 28"/><circle cx="126" cy="29" r="2"/><path d="M74 119 67 145M95 119l9 26M64 145h12M99 145h13"/></svg>
+          </div>
+          <p class="archive">FROM THE ARCHIVE</p>
+          <h3>You Beauty</h3>
+          <p>There was a Tesco bag by the fruit machine. Inside was a banana skin that must’ve been there for days. It had gone hard and black.</p>
+          <p class="excerpt">No danger of anyone slipping on it anymore. I don’t know why people leave things like that lying around.</p>
+          <a href="https://www.youtube.com/@wooznam" target="_blank" rel="noopener">WATCH ON YOUTUBE ↗</a>
+        </article>
+
+        <article class="film-card" data-film="world">
+          <div class="tattoo tattoo--head" aria-hidden="true">
+            <svg viewBox="0 0 160 160"><ellipse cx="80" cy="128" rx="54" ry="10"/><path d="M59 44c8-18 33-24 49-9 14 13 12 36 0 49-9 10-15 20-17 33H65c-1-13-7-20-14-30-11-15-6-33 8-43Z"/><path d="M60 78c-12 2-20-3-24-11 11-2 19-1 25 5M105 79c13 0 21-5 25-13-11-2-19 1-25 7"/><path d="M66 93c8 8 20 8 28 0"/></svg>
+          </div>
+          <p class="archive">FROM THE ARCHIVE</p>
+          <h3>At The End Of The World</h3>
+          <p>It all just seemed like such an unnecessarily morbid affair. And what a way for a prophet to sever ties with this mortal coil, if you pardon the pun, than with a very high-profile decollation at a dance.</p>
+          <p class="excerpt">You don’t f*ck with the Queen, whether you are a prophet or not.</p>
+          <a href="https://www.youtube.com/@wooznam" target="_blank" rel="noopener">WATCH ON YOUTUBE ↗</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="coin-section" aria-labelledby="coin-title">
+      <div>
+        <p>AN INDISPUTABLY FAIR METHOD OF DECISION MAKING</p>
+        <h2 id="coin-title">Swipe or tap the Wooznam coin.</h2>
+        <strong>It always lands sad.</strong>
+      </div>
+      <button class="coin" type="button" aria-label="Spin the Wooznam coin">
+        <span class="coin-inner">
+          <span class="coin-face coin-front"><img src="assets/sad-glyph.webp" alt="Wooznam and The Lickers, sad face" /></span>
+          <span class="coin-face coin-back"><img src="assets/happy-coin.webp" alt="" /></span>
+        </span>
       </button>
+    </section>
 
-      <nav class="site-nav" id="site-nav" aria-label="Primary navigation">
-        <a href="#films">The programme</a>
-        <a href="#manifesto">Behind the curtain</a>
-        <a href="#about">The troupe</a>
-      </nav>
-    </header>
-
-    <main id="main">
-      <section class="hero" id="top" aria-labelledby="hero-title">
-        <div class="hero__image" role="img" aria-label="Wooznam sitting in a dimly lit London pub"></div>
-        <div class="hero__scrim" aria-hidden="true"></div>
-        <div class="hero__content">
-          <p class="eyebrow hero__eyebrow">Mr Wooznam &amp; The Lickers humbly present</p>
-          <h1 id="hero-title">
-            History has already happened.
-            <em>We are merely making it worse.</em>
-          </h1>
-          <p class="hero__intro">
-            Original songs and cinematic short films about doomed romantics, failed revolutionaries,
-            criminal ancestors and other poor decisions.
-          </p>
-          <div class="hero__actions">
-            <a class="button button--solid" href="#sarajevo">Begin with Sarajevo</a>
-            <a class="button button--ghost" href="#manifesto">Peer behind the curtain</a>
-          </div>
-        </div>
-        <div class="hero__bill" aria-label="A cabinet of historical curiosities">
-          <span>By royal disappointment</span>
-          <strong>The Grand Historical Exhibition</strong>
-          <span>Admission: one poor decision</span>
-        </div>
-        <div class="hero__index" aria-hidden="true">
-          <span>Est.</span>
-          <strong>MMXXVI</strong>
-          <span>London</span>
-        </div>
-        <a class="scroll-cue" href="#films" aria-label="Scroll to the films">
-          <span>Enter the ring</span>
-          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v15m0 0-6-6m6 6 6-6" /></svg>
+    <section class="sessions" id="sessions" aria-labelledby="sessions-title">
+      <div class="section-head">
+        <p>LIVE FROM THE ASHTRAY</p>
+        <h2 id="sessions-title">ASHRAY SESSIONS</h2>
+      </div>
+      <div class="session-grid">
+        <a class="session-card" href="https://youtu.be/Be22l8P_83c" target="_blank" rel="noopener">
+          <img src="assets/pierrot-bg.webp" alt="Wooznam and The Lickers Ashtray Session one" />
+          <span><small>ASHRAY SESSION</small><strong>Live No. 1</strong><em>WATCH ON YOUTUBE ↗</em></span>
         </a>
-      </section>
-
-      <div class="marquee" aria-label="Dead people, bad decisions, original music">
-        <div class="marquee__track">
-          <span>Marvels of history</span><i>✦</i><span>Melancholy songs</span><i>✦</i><span>Monstrous decisions</span><i>✦</i>
-          <span aria-hidden="true">Marvels of history</span><i aria-hidden="true">✦</i><span aria-hidden="true">Melancholy songs</span><i aria-hidden="true">✦</i><span aria-hidden="true">Monstrous decisions</span><i aria-hidden="true">✦</i>
-        </div>
+        <a class="session-card" href="https://www.youtube.com/@wooznam" target="_blank" rel="noopener">
+          <img src="assets/stage-bg.webp" alt="Wooznam and The Lickers Ashtray Session two" />
+          <span><small>ASHRAY SESSION</small><strong>Live No. 2</strong><em>WATCH ON YOUTUBE ↗</em></span>
+        </a>
       </div>
+    </section>
 
-      <section class="stories" id="films" aria-labelledby="films-title">
-        <div class="section-heading reveal">
-          <p class="eyebrow">This evening’s entertainments</p>
-          <h2 id="films-title">The Grand Programme</h2>
-          <p>True stories, original songs and just enough historical accuracy to make everybody uncomfortable.</p>
-        </div>
-
-        <article class="story story--sarajevo" id="sarajevo" data-act-label="Act I · Sarajevo">
-          <div class="story__visual reveal">
-            <img
-              src="assets/sarajevo.webp"
-              width="1600"
-              height="893"
-              alt="Wooznam as Gavrilo Princip alone inside a dark 1914 prison cell"
-            />
-            <span class="story__number" aria-hidden="true">01</span>
-            <span class="story__stamp">A historical misadventure</span>
+    <section class="about" id="about" aria-labelledby="about-title">
+      <div class="section-head">
+        <p>ABOUT US</p>
+        <h2 id="about-title">THE TROUPE</h2>
+      </div>
+      <p class="about-intro">“A bleak British alternative folk-rock centred around a recurring character: Wooznam the Sad Clown.”</p>
+      <div class="troupe-grid">
+        <article class="member">
+          <div class="portrait-stage" data-portrait tabindex="0" aria-label="Interactive portrait of Wooznam. Drag to turn or tap to spin.">
+            <img src="assets/wooznam.webp" alt="Wooznam in sad clown makeup" />
           </div>
-          <div class="story__copy reveal">
-            <p class="eyebrow">Act I / Sarajevo / 1914</p>
-            <h3>Sarajevo</h3>
-            <p class="story__lede">
-              A teenage revolutionary, an Archduke and a string of coincidences so absurd they would be
-              rejected by any sensible editor.
-            </p>
-            <p>
-              A tragicomic song-film about the morning the twentieth century began badly, and the young man
-              who discovered that changing history is much easier than living with it.
-            </p>
-            <blockquote>
-              “A most curious thing to say. As if one has the ability to control one’s own death.”
-            </blockquote>
-            <button class="text-link case-trigger" type="button" data-case="sarajevo">
-              Open the case file <span aria-hidden="true">↗</span>
-            </button>
-          </div>
+          <h3>WOOZNAM</h3>
+          <p>Nobody knows. More significantly, nobody generally cares. But they should. Wooznam is part human. Almost certainly part machine. He writes. Sometimes sings.</p>
+          <p>Wherever there is tragedy, political violence, family dysfunction or an interesting death, Wooznam is sniffing about. Not helping, obviously. Just watching.</p>
         </article>
-
-        <article class="story story--annie" id="annie" data-act-label="Act II · Annie’s Ghost">
-          <div class="story__visual reveal">
-            <img
-              src="assets/annie.webp"
-              width="964"
-              height="838"
-              alt="Annie King looking across the nineteenth-century Liverpool docks"
-            />
-            <span class="story__number" aria-hidden="true">02</span>
-            <span class="story__stamp">A family investigation</span>
+        <article class="member">
+          <div class="portrait-stage" data-portrait tabindex="0" aria-label="Interactive portrait of Drewsnam. Drag to turn or tap to spin.">
+            <img src="assets/drewsnam.webp" alt="Drewsnam in black clown makeup" />
           </div>
-          <div class="story__copy reveal">
-            <p class="eyebrow">Act II / Ireland &amp; Liverpool</p>
-            <h3>Annie’s Ghost</h3>
-            <p class="story__lede">
-              It is most relieving to discover one descends from the criminally insane and the drunk. It
-              explains a great deal.
-            </p>
-            <p>
-              Prison ledgers, Catholic records, larceny, love and one formidable woman who crossed the Irish
-              Sea and left an indelible mark on a family tree populated largely by the unremarkable.
-            </p>
-            <blockquote>“Say what you will about Irish Catholics, but they kept excellent records.”</blockquote>
-            <button class="text-link case-trigger" type="button" data-case="annie">
-              Open the case file <span aria-hidden="true">↗</span>
-            </button>
-          </div>
+          <h3>DREWSNAM</h3>
+          <p>Ran away and joined the circus. Guitarist. Occasional sibling. Occasional fuck-up. Co-writer. Violinist.</p>
+          <p>If there’s an instrument, he’ll play it. If not, he’ll sniff it. This has not always improved matters. Attention span of a fish. The thirst of one too.</p>
         </article>
-      </section>
-
-      <section class="interlude" aria-label="Wooznam and The Lickers">
-        <img src="assets/stormbound.webp" width="2000" height="750" alt="Wooznam and The Lickers beneath storm clouds" />
-        <div class="interlude__veil" aria-hidden="true"></div>
-        <p aria-hidden="true">No footnote left unturned</p>
-      </section>
-
-      <section class="manifesto" id="manifesto" aria-labelledby="manifesto-title" data-act-label="Behind the curtain">
-        <div class="manifesto__title reveal">
-          <p class="eyebrow">Behind the curtain</p>
-          <h2 id="manifesto-title">Dig up the dead.<br />Give them a chorus.</h2>
-        </div>
-        <ol class="manifesto__rules">
-          <li class="reveal">
-            <span>01</span>
-            <div><h3>Find the footnote</h3><p>The stranger the detail, the closer it is to the truth.</p></div>
-          </li>
-          <li class="reveal">
-            <span>02</span>
-            <div><h3>Follow the human</h3><p>History remembers movements. Songs remember the people trapped inside them.</p></div>
-          </li>
-          <li class="reveal">
-            <span>03</span>
-            <div><h3>Write the chorus</h3><p>If tragedy cannot be explained, it can at least be made inconveniently catchy.</p></div>
-          </li>
-          <li class="reveal">
-            <span>04</span>
-            <div><h3>Leave the fingerprints</h3><p>No polished mythology. Keep the doubt, the dirt and the bad judgement.</p></div>
-          </li>
-        </ol>
-      </section>
-
-      <section class="about" id="about" aria-labelledby="about-title" data-act-label="The troupe">
-        <div class="about__portrait reveal">
-          <img
-            src="assets/wooznam-pub.webp"
-            width="2048"
-            height="1152"
-            alt="Wooznam in monochrome clown make-up at a pub table"
-          />
-          <span aria-hidden="true">Artist’s impression. Pint’s real.</span>
-        </div>
-        <div class="about__copy reveal">
-          <p class="eyebrow">Meet the troupe</p>
-          <h2 id="about-title">Nobody asked history to become a concept album.</h2>
-          <p class="about__lead">Wooznam &amp; The Lickers did it anyway.</p>
-          <p>
-            This is a home for darkly comic songs and cinematic films made from true stories. The facts are
-            researched. The dignity is handled less carefully.
-          </p>
-          <p>
-            Here you will find revolutionaries, clowns, criminals, ghosts and ordinary people who wandered
-            into history before history had the decency to warn them.
-          </p>
-        </div>
-      </section>
-
-      <section class="closing" aria-labelledby="closing-title">
-        <p class="eyebrow">The final bow</p>
-        <h2 id="closing-title">History is written by the victors.<br /><em>The B-sides belong to everyone else.</em></h2>
-        <a class="button button--solid" href="#top">Return to the beginning</a>
-      </section>
-    </main>
-
-    <footer class="site-footer">
-      <a class="brand brand--footer" href="#top">
-        <img src="assets/mark.webp" width="64" height="64" alt="" />
-        <span class="brand__name">Wooznam <i>&amp;</i> The Lickers</span>
-      </a>
-      <p>Original songs, questionable characters.</p>
-      <p>© <span data-year>2026</span> Wooznam &amp; The Lickers</p>
-    </footer>
-
-    <dialog class="case-file" aria-labelledby="case-title">
-      <div class="case-file__topline">
-        <span>Private papers / handle without care</span>
-        <button class="case-file__close" type="button" aria-label="Close case file">×</button>
-      </div>
-      <div class="case-file__body">
-        <p class="eyebrow" data-case-meta></p>
-        <h2 id="case-title" data-case-title></h2>
-        <p class="case-file__lede" data-case-lede></p>
-        <div class="case-file__grid">
-          <div>
-            <h3>The trouble</h3>
-            <p data-case-trouble></p>
+        <article class="member">
+          <div class="portrait-stage" data-portrait tabindex="0" aria-label="Interactive portrait of Lucas. Drag to turn or tap to spin.">
+            <img src="assets/lucas.webp" alt="Lucas wearing clown makeup" />
           </div>
-          <div>
-            <h3>Persons of interest</h3>
-            <ul data-case-people></ul>
-          </div>
-        </div>
-        <p class="case-file__note" data-case-note></p>
+          <h3>LUCAS</h3>
+          <p>Cool Hand Luke. The brains. This is relative. Songwriter. Producer. Musician. Get the guitar.</p>
+          <p>Has an unusually high tolerance for bad ideas. Many of them are his. Which is probably why this works. His biggest obstacle is time.</p>
+        </article>
       </div>
-    </dialog>
+    </section>
 
-    <script src="script.js"></script>
-  </body>
+    <section class="tour" id="tour" aria-labelledby="tour-title">
+      <p>THE ROAD</p>
+      <h2 id="tour-title">TOUR DATES</h2>
+      <div class="no-shows"><strong>No performances currently announced.</strong><span>REGRETTABLY, EVEN WE HAVE STANDARDS.</span></div>
+    </section>
+
+    <section class="bottom">
+      <img src="assets/wooznam-scribble.webp" alt="" aria-hidden="true" />
+      <p>YOU HAVE REACHED THE BOTTOM.</p>
+      <h2>DON’T WORRY.</h2>
+      <p>You can always sink lower.</p>
+      <div class="bad-advice"><span>DRINK HARDER LIQUORS.</span><b>•</b><span>TRY HARDER DRUGS.</span><b>•</b><span>POWER THROUGH IT.</span></div>
+      <a class="archive-button" href="#films">ENTER THE COMPLETE ARCHIVE</a>
+      <div class="socials">
+        <a href="https://soundcloud.com/c_l_o_w_n" target="_blank" rel="noopener">SOUNDCLOUD</a>
+        <a href="https://www.tiktok.com/@wooznam" target="_blank" rel="noopener">TIKTOK @wooznam</a>
+        <a href="https://www.instagram.com/wooznam/" target="_blank" rel="noopener">INSTAGRAM @wooznam</a>
+      </div>
+      <a class="surface" href="#top">Return to the surface ↑</a>
+      <small>Wooznam &amp; The Lickers © 2026</small>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
 </html>

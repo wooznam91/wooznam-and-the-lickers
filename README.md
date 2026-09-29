@@ -1,22 +1,18 @@
-# Wooznam & The Lickers
+# Wooznam & The Lickers — v26 migration rebuild
 
-A responsive, static artist website built for direct deployment on Vercel.
+Reconstructed static version of the current ChatGPT Site projection (source version 26) for GitHub/Vercel migration.
 
-## Deploy
+## Architecture
 
-1. Add this folder to a GitHub repository.
-2. Import the repository at [vercel.com/new](https://vercel.com/new).
-3. Leave the framework preset as **Other** and deploy. There is no build command or output-directory setting.
+- GitHub: canonical website source and version history
+- Vercel: deployment from `main`
+- Google Drive: master asset/archive store
+- ChatGPT Library: working area only, not source of truth
 
-You can also run `vercel --prod` inside the folder if you use the Vercel CLI.
+## Deployment
 
-## Preview locally
+Import the repository into Vercel using Framework Preset **Other**. No build command or output directory is required.
 
-Open `index.html` directly, or serve the folder with any static web server.
+## Important
 
-## Edit
-
-- Page copy and structure: `index.html`
-- Colours, typography and layout: `styles.css`
-- Case-file content and interactions: `script.js`
-- Images: `assets/`
+This rebuild replaces the obsolete September 22 Vercel ZIP. Do not restore `wooznam-and-the-lickers-vercel.zip` over this version.
