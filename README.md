@@ -2,20 +2,21 @@
 
 The complete static website for Wooznam & The Lickers.
 
-This repository contains the exact website published at:
+Production domain:
 
-https://wooznam-and-the-lickers-preview.wooznam.chatgpt.site
+https://wooznam.com
 
 ## What is included
 
-- Complete single-page website
+- Complete homepage plus five crawlable song pages
 - Responsive mobile, tablet and desktop layouts
 - Interactive spinning coin and band portraits
 - High-resolution crossfading hero imagery, animated curtains and neon sign
 - Seven embedded YouTube videos
 - Film and Ashtray Sessions sections
 - About and tour sections
-- SoundCloud, TikTok, Instagram and YouTube links, plus Spotify and Apple Music placeholders
+- Spotify, SoundCloud, TikTok, Instagram and YouTube links, plus an Apple Music placeholder
+- Canonical URLs, structured data, robots.txt and an XML sitemap
 - All required local image assets
 
 ## Publish with GitHub Pages
@@ -57,10 +58,14 @@ Then open `http://localhost:8080`.
 ├── descent.css
 ├── descent.js
 ├── index.html
+├── robots.txt
+├── sitemap.xml
+├── song.css
+├── songs/
 ├── vercel.json
 └── README.md
 ```
 
-## Source snapshot
+## Search indexing
 
-Packaged from the published site source at commit `181aa025911fe58a1dadb9e35210e33411925672`.
+After deploying, add `https://wooznam.com/sitemap.xml` in Google Search Console and request indexing for the homepage.

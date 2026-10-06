@@ -115,8 +115,11 @@ a { color:inherit; }
 .reel--right .song-mark { margin-right:0; margin-left:auto; }
 .reel__copy span { display:inline-block; padding:.55rem .8rem; color:var(--ink); background:var(--gold-light); font-family:var(--display); font-size:.75rem; letter-spacing:.14em; text-transform:uppercase; transform:rotate(-2deg); box-shadow:.35rem .35rem 0 #570016; }
 .reel__copy h3 { margin:1.4rem 0 0; font-family:var(--body); font-size:clamp(3.2rem,6vw,6.5rem); font-style:italic; font-weight:600; letter-spacing:-.055em; line-height:.86; }
+.reel__copy h3 a { color:inherit; text-decoration:none; }
+.reel__copy h3 a:hover,.reel__copy h3 a:focus-visible { color:var(--gold-light); }
 .reel__copy p { max-width:34rem; margin:1.35rem 0 0; color:#d8c7a8; font-size:clamp(1.05rem,1.45vw,1.28rem); line-height:1.45; text-wrap:pretty; }
 .reel--right .reel__copy p { margin-left:auto; }
+.reel__copy .song-notes { display:inline-block; margin-top:1.2rem; color:var(--gold-light); font-family:var(--display); font-size:.76rem; letter-spacing:.12em; text-decoration-thickness:1px; text-transform:uppercase; text-underline-offset:.35rem; }
 .reel__frame { position:relative; grid-column:5/13; padding:clamp(.55rem,1vw,.85rem); background:#050102; border:.6rem ridge var(--gold); outline:2px solid #3d2707; box-shadow:0 0 0 .65rem #120306,0 0 0 .78rem rgba(242,216,140,.55),0 2.5rem 7rem #000; rotate:-1deg; }
 .reel--right .reel__frame { grid-column:1/9; grid-row:1; rotate:1deg; }
 .reel__frame::before,.reel__frame::after { position:absolute; z-index:2; display:grid; width:2.6rem; height:2.6rem; content:""; background:var(--gold-light) url("assets/wooznam-face-stencil.webp") center/76% no-repeat; border:.25rem double var(--ink); border-radius:50%; place-items:center; }
